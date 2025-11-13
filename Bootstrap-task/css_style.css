@@ -1,0 +1,50 @@
+.col-setting {
+    border: 1px solid grey;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.img-fluid{
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+.img-fluid:hover {
+    border: blue;
+}
+
+.btn {
+    width: 10em;
+    height: 5ex;
+    background-color: gold;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: plum;
+}
+
+h1 {
+    background-color: greenyellow;
+    font-weight: bolder;
+    color: darkblue;
+}
+
+footer {
+    background-color: grey;
+}
+
+.rounded {
+    width: 15%;
+    height: 15%;
+}

@@ -11,6 +11,8 @@
     crossorigin="anonymous">
 
     <title>Shopping Menu</title>
+
+    <!-- Styling the web using CSS-->
     <style>
         .col-setting {
             border: 1px solid grey;
@@ -19,15 +21,67 @@
             padding: 20px;
             margin: 5px 0;
         }
+
+        .img-fluid{
+            width: 60%;
+            height: 60%;
+            background-color: white;
+            border: 2px solid firebrick;
+            border-radius: 10px;
+            cursor: zoom-in;
+        }
+
+        .img-fluid:hover {
+            border: blue;
+        }
+
+        .btn {
+            width: 10em;
+            height: 5ex;
+            background-color: gold;
+            border: 2px solid firebrick;
+            border-radius: 10px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: plum;
+        }
+
+        h1 {
+            background-color: greenyellow;
+            font-weight: bolder;
+            color: darkblue;
+        }
+        
+        footer {
+            background-color: grey;
+        }
+
+        .rounded {
+            width: 15%;
+            height: 15%;
+        }
+
+
     </style>
   </head>
   <body>
+
+    <!-- Using container element to style the heading in HTML-->
     <div class="container">
         <h1 class="text-center my-4">Products Menu</h1>
-        <p class="mb-4">
-            The list of all products sold at my
-            shop are provided in the menu below</p>
+        <p class="text-center mb-4"><strong>The list of all products sold at my
+            shop are provided in the menu below</strong>
+        </p>
 
+        <!-- Using row element to create grid system for products-->
+        <!-- Images are set using bootstrap img-fluid element
+        for them to be responsive-->
+        <!-- CSS hover element is used to hover on the images
+        and also used on buttons to change color-->
         <div class="row">
             <div class="col-sm-4 col-setting">
                 <p><strong>Laptop</strong></p>
@@ -147,27 +201,59 @@
     </div>
     <footer>
 
+        <!-- Footer element is used to create a form
+        with user's contact details-->
+        <p class="text-center my-4" id="Info"><b>Enter contact details below:</b></p>
+        <img
+        src="shoplogo.avif"
+        class="rounded mx-auto d-block"
+        alt="Logo image">
+
+        <!-- Form element is used to get the user's
+        details-->
         <form>
 
             <div class="form-group">
-                <label for="Input email">Email address</label>
-                <input type="email" class="form-control" id="Input email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="Input fname"><b>First Name</b></label>
+                <input
+                type="fname"
+                class="form-control"
+                id="Input fname"
+                aria-describedby="FirstName"
+                placeholder="Enter name">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="Input lname"><b>Last Name</b></label>
+                <input
+                type="lname"
+                class="form-control"
+                id="Input lname"
+                aria-describedby="LastName"
+                placeholder="Enter name">
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+                <label for="Input Email"><b>Email Address</b></label>
+                <input
+                type="Email"
+                class="form-control"
+                id="Input Email"
+                aria-describedby="EmailAddress"
+                placeholder="Enter Email">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+                <label for="exampleInputPassword1"><b>Password</b></label>
+                <input
+                type="password"
+                class="form-control"
+                id="Input Password"
+                placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-primary"><b>Submit</b></button>
         </form>
     </footer>
 
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
